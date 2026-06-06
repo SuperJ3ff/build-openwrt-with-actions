@@ -1,10 +1,10 @@
 # 请在下方输入自定义命令(一般用来安装第三方插件)(可以留空)
 
 # 编辑默认的lan口ip地址
-sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.7.1/g' package/base-files/files/bin/config_generate
 
 # 编辑默认的主题
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # 编辑默认的luci显示的固件名称
 #sed -i 's/OpenWrt/ZWRT/g' package/base-files/files/bin/config_generate
@@ -18,3 +18,4 @@ echo 'src-git UA3F https://github.com/SunBK201/UA3F.git' >>feeds.conf.default
 #git clone https://github.com/kenzok8/small.git package/small
 #git clone https://github.com/SunBK201/UA3F.git package/UA3F
 git clone https://github.com/stevenjoezhang/luci-app-adguardhome.git package/ADGH
+echo 'src-git qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default

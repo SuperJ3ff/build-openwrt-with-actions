@@ -18,5 +18,6 @@ sed -i 's/192.168.1.1/192.168.7.1/g' package/base-files/files/bin/config_generat
 #git clone https://github.com/SunBK201/UA3F.git package/UA3F
 echo 'src-git qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
 echo 'src-git UA3F https://github.com/SunBK201/UA3F.git' >>feeds.conf.default
-echo 'src-git bandix https://github.com/timsaya/luci-app-bandix.git;main' >>feeds.conf.default
+echo 'src-git openwrt-bandix https://github.com/timsaya/openwrt-bandix.git' >>feeds.conf.default
+echo 'src-git luci-app-bandix https://github.com/timsaya/luci-app-bandix.git' >>feeds.conf.default
 git clone https://github.com/stevenjoezhang/luci-app-adguardhome.git package/ADGH

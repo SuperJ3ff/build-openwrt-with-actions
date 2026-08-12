@@ -1,4 +1,4 @@
-name: 🚀 编译 237immortalwrt(Build immortalwrt)
+name: 🚀 编译 237immortalwrt(Build 237immortalwrt)
 
 on:
   workflow_dispatch:
